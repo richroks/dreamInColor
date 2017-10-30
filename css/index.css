@@ -295,9 +295,10 @@ nav img {
 
 @media only screen and (max-width: 480px) {
   header {
-    min-height: 13em;
-    background-size: contain;
+    min-height: 33em;
+    background-size: cover;
     background-position: top;
+    background-attachment: scroll;
   }
 
   nav img {
@@ -503,7 +504,7 @@ div#slider figure {
 
 @media only screen and (max-width: 880px) {
   .spacer-1 {
-    max-height: 30em;
+    height: 20em;
   }
 
   .spacer-1 h1 {
@@ -571,7 +572,7 @@ div#slider figure {
 
 @media only screen and (max-width: 880px) {
   .spacer-2 {
-    max-height: 30em;
+    height: 20em;
   }
 }
 
@@ -585,6 +586,7 @@ div#slider figure {
 .fourth h1 {
   text-align: center;
   padding-top: 2em;
+  line-height: 1.3em;
 }
 
 .fourth p {
