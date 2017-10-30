@@ -46,7 +46,7 @@ header {
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
-  height: 50em;
+  min-height: 50em;
   padding-top: 2.5em;
   padding-right: 5em;
 }
@@ -240,6 +240,7 @@ nav img {
   text-decoration: none;
   overflow: hidden;
   line-height: 2em;
+  z-index: 105;
 }
 .overlay-menu ul li a:hover:after, .overlay-menu ul li a:focus:after, .overlay-menu ul li a:active:after {
   width: 100%;
@@ -294,8 +295,9 @@ nav img {
 
 @media only screen and (max-width: 480px) {
   header {
-    height: 30em;
-    background-size: cover;
+    min-height: 13em;
+    background-size: contain;
+    background-position: top;
   }
 
   nav img {
@@ -414,6 +416,15 @@ div#slider figure {
     margin: 0;
     display: block;
   }
+
+  .request.style1:hover {
+    color: white;
+  }
+
+  .request.style1:before {
+    position: static;
+    content: none;
+  }
 }
 
 @media only screen and (max-width: 480px) {
@@ -516,6 +527,7 @@ div#slider figure {
 .third h1 {
   text-align: center;
   padding: 2em 0;
+  line-height: 1.3em;
 }
 
 .packages {
