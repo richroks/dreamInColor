@@ -37,6 +37,7 @@
 	 $(".button_container").toggleClass("active");
 	});
 
+
 // FACEBOOK MODAL
 $(".modal").each( function(){
 	$(this).wrap('<div class="overlay"></div>')
