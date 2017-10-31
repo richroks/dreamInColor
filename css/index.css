@@ -217,7 +217,7 @@ nav img {
   height: calc(100% / 6);
   position: relative;
   opacity: 0;
-  padding-bottom: 1em;
+  margin-bottom: 1em;
 }
 .overlay-menu ul li a {
   display: block;
@@ -225,8 +225,8 @@ nav img {
   color: #FFF;
   text-decoration: none;
   overflow: hidden;
-  line-height: 2em;
   z-index: 105;
+  padding: 2em;
 }
 .overlay-menu ul li a:hover:after, .overlay-menu ul li a:focus:after, .overlay-menu ul li a:active:after {
   width: 100%;
