@@ -31,7 +31,7 @@
    $('#overlay').toggleClass('open');
   });
 
-	$('#overlay li a').click(function() {
+	$('#overlay li').click(function() {
 	 $(this).toggleClass('active');
 	 $('#overlay').toggleClass('open');
 	 $(".button_container").toggleClass("active");
