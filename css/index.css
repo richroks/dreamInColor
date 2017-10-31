@@ -457,6 +457,14 @@ div#slider figure {
   text-align: justify;
 }
 
+.service img {
+  background-color: darkgrey;
+  height: 13em;
+  width: 13em;
+  margin: 0 auto;
+  border-radius: 5%;
+}
+
 .service-img {
   background-color: darkgrey;
   height: 13em;
@@ -588,7 +596,7 @@ div#slider figure {
 }
 
 .stylist {
-  width: 200px;
+  width: 300px;
   min-height: 20em;
   padding: 2em;
   display: flex;
@@ -630,10 +638,27 @@ div#slider figure {
 .placeholder {
   height: 20em;
   width: 20%;
-  background-image: url('../assets/images/curlingShot.jpg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.ph1 {
+  background-image: url('../assets/images/ph1.jpg');
+  background-position: right;
+}
+.ph2 {
+  background-image: url('../assets/images/ph2.jpg');
+}
+.ph3 {
+  background-image: url('../assets/images/ph3.jpg');
+}
+.ph4 {
+  background-image: url('../assets/images/ph4.jpg');
+}
+.ph5 {
+  background-image: url('../assets/images/ph5.jpg');
+  background-position: right;
 }
 
 @media only screen and (max-width: 900px) {
