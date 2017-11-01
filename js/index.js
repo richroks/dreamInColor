@@ -12,32 +12,17 @@
 })(jQuery);
 
 // SCROLL MOBLE NAV
-(function($) {
-    $(document).ready(function(){
-        $(window).scroll(function(){
-            if ($(this).scrollTop() > 400 && $(this).width() < 951) {
-                $('#mobile').fadeIn(500);
-								$('#mobile img').fadeIn(500);
-            } else {
-                $('#mobile').fadeOut(500);
-            }
-        });
-    });
-})(jQuery);
-
-// MOBILE SCROLL TOGGLE
-	$('#toggle').click(function() {
+$('#toggle').click(function() {
    $(this).toggleClass('active');
-   $('#overlay').toggleClass('open');
+   $('#overlay2').toggleClass('open');
   });
 
-	$('#overlay li').click(function() {
-	 $(this).toggleClass('active');
-	 $('#overlay').toggleClass('open');
-	 $(".button_container").toggleClass("active");
-	});
+  $('#overlay2 li').click(function() {
+     $('#overlay2').toggleClass('open');
+     $('.button_container').toggleClass('active');
+    });
 
-// FACEBOOK MODAL
+//FACEBOOK MODAL
 $(".modal").each( function(){
 	$(this).wrap('<div class="overlay"></div>')
 });
@@ -69,7 +54,6 @@ $(".open-modal").on('click', function(e){
 	});
 
 });
-
 $(".close-modal").on('click', function(e){
 	e.preventDefault();
 	e.stopImmediatePropagation;
@@ -101,6 +85,7 @@ function initMap() {
   });
 };
 
+//SMOOTH SCROLL
 // Select all links with hashes
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
