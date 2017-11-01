@@ -1,4 +1,4 @@
-// SCROLL NAV
+// MAIN SCROLL NAV
 (function($) {
     $(document).ready(function(){
         $(window).scroll(function(){
@@ -11,7 +11,20 @@
     });
 })(jQuery);
 
-// SCROLL MOBLE NAV
+// MOBILE SCROLL NAV
+(function($) {
+    $(document).ready(function(){
+        $(window).scroll(function(){
+            if ($(this).scrollTop() > 450 && $(this).width() < 951) {
+                $('.mobile-bg').fadeIn(500);
+            } else {
+                $('.mobile-bg').fadeOut(500);
+            }
+        });
+    });
+})(jQuery);
+
+// MOBLE NAV MODAL
 $('#toggle').click(function() {
    $(this).toggleClass('active');
    $('#overlay2').toggleClass('open');
